@@ -33,6 +33,7 @@
     "webpack-dev-server": "^4.7.3"
   },
   "dependencies": {
+    "core-js": "^3.21.0",
     "css-loader": "^6.5.1",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
