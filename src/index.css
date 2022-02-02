@@ -75,13 +75,13 @@ html {
   box-shadow: 3px 2px 0.5px 0.5px #000;
 }
 
-.list-ietm {
+li {
   padding: 1rem;
   list-style: none;
   display: flex;
 }
 
-.list-ietm:nth-child(odd) {
+li:nth-child(odd) {
   background-color: #ddd;
 }
 
