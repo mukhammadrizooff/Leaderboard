@@ -18,11 +18,10 @@ const scoresDisplay = (scores) => {
   });
 };
 
-
 const getScoreObjects = async () => {
   const response = await fetch(url);
   const scores = (await response.json()).result;
-  console.log(scores)
+  // console.log(scores);
 
   scoresDisplay(scores);
 };
@@ -47,13 +46,13 @@ window.addEventListener('load', () => {
 addRefresh();
 
 const postScore = (scoreObject) => {
-    console.log('start post score fun');
-    fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-type': 'application/json; charset=UTF-8',
-    },
-    body: JSON.stringify(scoreObject),
+// console.log('start post score fun');
+fetch(url, {
+  method: 'POST',
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+  body: JSON.stringify(scoreObject),
 
   });
 };
@@ -63,19 +62,18 @@ const submitAddFunc = () => {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
     const formData = new FormData(form);
-    const userInput = document.querySelector('#user')
+    const userInput = document.querySelector('#user');
 
     const object = {
       user: userInput.value,
       score: formData.get('score'),
     };
-  
-    console.log('before post score fun');
+    // console.log('before post score fun');
     postScore(object);
-    console.log('after post scrore fun');
+    // console.log('after post scrore fun');
     form.reset();
   });
 };
 
 submitAddFunc();
-console.log('after submitAddFunc function');
+// console.log('after submitAddFunc function');
