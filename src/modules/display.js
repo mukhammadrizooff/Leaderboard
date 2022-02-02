@@ -1,12 +1,12 @@
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Vgufs5n18vzBAjzxI4Io/scores';
 
-const scoreDisp = () => document.querySelector('#list-scores');
+const listScores = () => document.querySelector('#list-scores');
 
 const checkEmpty = () => {
-  if (scoreDisp().innerHTML === '') {
+  if (listScores().innerHTML === '') {
     const listItem = document.createElement('li');
     listItem.textContent = 'Recorded No Scores';
-    scoreDisp().appendChild(listItem);
+    listScores().appendChild(listItem);
   }
 };
 
@@ -14,7 +14,7 @@ const scoresDisplay = (scores) => {
   scores.forEach((scoreObject) => {
     const listItem = document.createElement('li');
     listItem.textContent = `${scoreObject.user}: ${scoreObject.score}`;
-    scoreDisp().appendChild(listItem);
+    listScores().appendChild(listItem);
   });
 };
 
@@ -26,7 +26,7 @@ const getScoreObjects = async () => {
 };
 
 const refresh = async () => {
-  scoreDisp().innerHTML = '';
+  listScores().innerHTML = '';
   await getScoreObjects();
   checkEmpty();
 };
