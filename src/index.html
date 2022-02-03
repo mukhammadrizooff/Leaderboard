@@ -10,30 +10,27 @@
     <title>Leaderboard Page</title>
 </head>
 <body>
-    <h1 class="main-title">Leaderboard</h1>
+    <div class="box">
+      <div class="lightbar"></div>
+      <div class="topLayer"></div>
+      <h1 class="main-title">Leaderboard</h1>
+    </div>  
     <section class="main-section">
-      <div class="main-container">
         <div class="table-container">
           <div class="intro-score">
             <h2 class="score-title">Recent scores</h2>
             <button type="button" class="refresh-btn btn" id="refresh">Refresh</button>
           </div>
-          <ul id="list-scores" class="list-scores">
-              <!-- <li class="list-ietm">John: 123</li>
-              <li class="list-ietm">Doe: 123</li>
-              <li class="list-ietm">Susan: 123</li>
-              <li class="list-ietm">Emma: 123</li> -->
-          </ul>
+          <ul id="list-scores" class="list-scores"></ul>
         </div>
         <div>
           <h2 class="score-title">Add your score</h2>
           <form action="add-form" class="form">
-            <input class="input" id="user" type="text" minlength="1" maxlength="30" name="name" placeholder="Your name" />
-            <input class="input" id="score" type="number" min="1" max="9999999" name="score" placeholder="Your score"/>
+            <input class="input-text" id="user" type="text" minlength="1" maxlength="30" name="name" placeholder="Player name" />
+            <input class="input-num" id="score" type="number" min="1" max="9999999" name="score" placeholder="Player score"/>
             <button type="submit" id="submit" class="add-btn btn">Submit</button>
           </form>
-        </div>
-      </div>
+        </div> 
     </section>
   </body>
 </html>
