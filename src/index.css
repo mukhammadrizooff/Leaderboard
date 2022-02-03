@@ -26,11 +26,12 @@ body {
   padding-bottom: 10rem;
   color: white;
   letter-spacing: 0.1em;
-  text-shadow: 0 0 10px #f00, 
-               0 0 20px #f00, 
-               0 0 40px #f00,
-               0 0 80px #f00, 
-               0 0 120px #f00;
+  text-shadow:
+    0 0 10px #f00,
+    0 0 20px #f00,
+    0 0 40px #f00,
+    0 0 80px #f00,
+    0 0 120px #f00;
 }
 
 .lightbar {
@@ -43,11 +44,12 @@ body {
   border-radius: 10px;
   background: #fff;
   z-index: 2;
-  box-shadow: 0 0 10px #f00, 
-              0 0 20px #f00, 
-              0 0 40px #f00,
-              0 0 80px #f00, 
-              0 0 120px #f00;
+  box-shadow:
+    0 0 10px #f00,
+    0 0 20px #f00,
+    0 0 40px #f00,
+    0 0 80px #f00,
+    0 0 120px #f00;
   animation: animatelightbar 5s linear infinite;
 }
 
@@ -93,11 +95,12 @@ body {
   font-weight: 500;
   color: white;
   letter-spacing: 0.1em;
-  text-shadow: 0 0 10px #f00, 
-               0 0 20px #f00, 
-               0 0 40px #f00,
-               0 0 80px #f00, 
-               0 0 120px #f00;
+  text-shadow:
+    0 0 10px #f00,
+    0 0 20px #f00,
+    0 0 40px #f00,
+    0 0 80px #f00,
+    0 0 120px #f00;
 }
 
 .btn {
@@ -107,15 +110,16 @@ body {
   border-radius: 15px;
   padding: 1rem 2rem;
   cursor: pointer;
-  color: inherit white;
+  color: white;
   background-color: #7c08088f;
   border: #fa000093 solid 0.2rem;
   letter-spacing: 0.1em;
-  text-shadow: 0 0 10px #00dbf8, 
-               0 0 20px #00dbf8, 
-               0 0 40px #00dbf8,
-               0 0 80px #00dbf8,
-               0 0 120px #00dbf8;
+  text-shadow:
+    0 0 10px #00dbf8,
+    0 0 20px #00dbf8,
+    0 0 40px #00dbf8,
+    0 0 80px #00dbf8,
+    0 0 120px #00dbf8;
 }
 
 .btn:hover {
