@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
 
 * {
   margin: 0;
@@ -7,54 +7,119 @@
 }
 
 html {
-  font-family: "Acme", sans-serif;
+  font-family: "Black Ops One", cursive;
   font-size: 65%;
 }
 
-.main-title {
-  font-size: 9em;
-  padding-left: 6rem;
-  padding-top: 6rem;
+body {
+  background: url("C:\Users\mukha\Leaderboard\src\images\644198.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: black;
+}
+
+.box .main-title {
+  font-size: 6.5rem;
+  padding-left: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 10rem;
+  color: white;
+  letter-spacing: 0.1em;
+  text-shadow:
+    0 0 10px #f00,
+    0 0 20px #f00,
+    0 0 40px #f00,
+    0 0 80px #f00,
+    0 0 120px #f00;
+}
+
+.lightbar {
+  position: absolute;
+  margin: 20px;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 135px;
+  border-radius: 10px;
+  background: #fff;
+  z-index: 2;
+  box-shadow:
+    0 0 10px #f00,
+    0 0 20px #f00,
+    0 0 40px #f00,
+    0 0 80px #f00,
+    0 0 120px #f00;
+  animation: animatelightbar 5s linear infinite;
+}
+
+@keyframes animatelightbar {
+  0%,
+  5% {
+    transform: scaleY(0) translateX(0);
+  }
+
+  10% {
+    transform: scaleY(1) translateX(0);
+  }
+
+  90% {
+    transform: scaleY(1) translateX(calc(600px - 20px));
+  }
+
+  95%,
+  100% {
+    transform: scaleY(0) translateX(calc(600px - 20px));
+  }
 }
 
 .main-section {
-  padding-left: 4rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 80vh;
-}
-
-.main-container {
-  display: flex;
-  gap: 20rem;
+  justify-content: space-around;
 }
 
 .table-container {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  width: 50rem;
+  font-size: 4rem;
+  font-weight: 500;
 }
 
 .intro-score {
   display: flex;
-  gap: 4rem;
+  padding-bottom: 4vh;
+  gap: 8rem;
 }
 
 .score-title {
   font-size: 4rem;
   font-weight: 500;
+  color: white;
+  letter-spacing: 0.1em;
+  text-shadow:
+    0 0 10px #f00,
+    0 0 20px #f00,
+    0 0 40px #f00,
+    0 0 80px #f00,
+    0 0 120px #f00;
 }
 
 .btn {
   font-size: 2rem;
   margin-top: 1rem;
   margin-left: auto;
-  padding: 0.2rem;
-  border: black solid 0.3rem;
-  border-radius: 40% 26% 46% 47% / 1% 1% 1% 1%;
-  box-shadow: 3px 2px 0.5px 0.5px #000;
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  color: white;
+  background-color: #7c08088f;
+  border: #fa000093 solid 0.2rem;
+  letter-spacing: 0.1em;
+  text-shadow:
+    0 0 10px #00dbf8,
+    0 0 20px #00dbf8,
+    0 0 40px #00dbf8,
+    0 0 80px #00dbf8,
+    0 0 120px #00dbf8;
 }
 
 .btn:hover {
@@ -62,27 +127,40 @@ html {
 }
 
 .btn:active {
-  background-color: rgb(49, 48, 48);
-  color: #ddd;
+  background-color: rgba(54, 0, 0, 0.527);
+  color: rgb(255, 115, 0);
 }
 
 .list-scores {
+  height: 40rem;
   font-size: 2.5rem;
   display: flex;
   flex-direction: column;
-  border: black solid 0.3rem;
-  border-radius: 40% 26% 46% 47% / 1% 1% 1% 1%;
-  box-shadow: 3px 2px 0.5px 0.5px #000;
+  border: rgba(255, 0, 0, 0.644) solid 0.2rem;
+  border-radius: 6px;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: #7c08088f;
+  text-transform: uppercase;
 }
 
 li {
-  padding: 1rem;
+  padding: 10px 20px;
+  margin: 5px 0;
   list-style: none;
   display: flex;
+  color: #d4f3f5;
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.212);
 }
 
 li:nth-child(odd) {
-  background-color: #ddd;
+  background-color: rgba(110, 3, 3, 0.582);
+}
+
+li:hover {
+  color: rgb(16, 205, 238);
+  cursor: pointer;
 }
 
 form {
@@ -93,11 +171,27 @@ form {
 }
 
 input {
-  padding: 0.3rem;
   font-size: 2rem;
-  border: black solid 0.3rem;
-  border-radius: 40% 26% 46% 47% / 1% 1% 1% 1%;
-  box-shadow: 3px 2px 0.5px 0.5px #000;
+  border: rgba(253, 0, 0, 0.76) solid 0.2rem;
+  border-radius: 6px;
+  padding: 1rem;
+  color: #d4f3f5;
+  background-color: #7c08086c;
+}
+
+input:focus {
+  outline: none;
+}
+
+.input-num::-webkit-outer-spin-button,
+.input-num::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::placeholder {
+  color: #d4f3f5;
+  opacity: 1;
 }
 
 .add-btn {
