@@ -4,7 +4,7 @@
 
 ## Screenshot
 Additional material about the project.
-![2022-02-01_22-29-20](https://user-images.githubusercontent.com/63915024/152023939-10ed1127-630d-4dbc-abd2-8a7a55d55c35.png)
+![2022-02-04_03-33-45](https://user-images.githubusercontent.com/63915024/152449913-c469e460-e4f9-4d29-8b43-6b723483d1a3.png)
 
 
 ## Built With
